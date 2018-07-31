@@ -20,10 +20,10 @@ public class BaseSorting {
         show(a);
 
         //Q2
-        String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        /*String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         mergesort(b);
         assert isSorted(b);
-        show(b);
+        show(b);*/
     }
 
     public static void quicksortmid(Comparable[] a) {
@@ -35,13 +35,11 @@ public class BaseSorting {
     public static <T extends Comparable<T>>
     void quickSort(T[] data, int min, int max){
         if(min < max){
-
             int middleIndex = (min + max) / 2;
-            int middle = getMiddleIndex(data, min, max, middleIndex);
-            partition(data, min, max, middle);
-            //middleIndex = partition(data, min, max, middle);
-            quickSort(data, min, middleIndex);
-            quickSort(data, middleIndex, max);
+            int middle = getMiddleIndex(data, min, middleIndex, max);
+            middleIndex = partition(data, min, max, middle);
+            quickSort(data, min, middleIndex  - 1);
+            quickSort(data, middleIndex + 1, max);
         }
     }
     public static<T extends Comparable<T>>
@@ -53,6 +51,8 @@ public class BaseSorting {
                     //max is smallest, min is largest
                     if (data[third].compareTo(data[first]) < 0) {
                         middleValue = third;
+                    }else if(data[third].compareTo(data[first]) == 0) {
+                        middleValue = second;
                     } else {
                         middleValue = first;
                     }
@@ -62,18 +62,39 @@ public class BaseSorting {
                     //min is smallest, max is largest
                     if (data[third].compareTo(data[first]) < 0) {
                         middleValue = first;
-                    } else {
+                    }else if(data[third].compareTo(data[first]) == 0) {
+                          middleValue = second;
+                    }else {
                         middleValue = third;
                     }
                 }
+            }else{
+                //second equal first
+                middleValue = third;
             }
            return middleValue;
     }
     public static <T extends Comparable<T>>
     int partition(T[] data, int min, int max, int middleIndex){
+        int left, right;
+        T partitionElement = data[middleIndex];
+        swap(data, middleIndex, min);
+        left = min;
+        right = max;
 
-
-        return 0;
+        while(left < right){
+            while(left < right && data[left].compareTo(partitionElement) <= 0){
+                left ++;
+            }
+            while(data[right].compareTo(partitionElement) > 0){
+                right --;
+            }
+            if(left < right){
+                swap(data, left, right);
+            }
+        }
+        swap(data, min, right);
+        return right;
     }
 
     public static <T extends Comparable<T>>

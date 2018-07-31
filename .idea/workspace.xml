@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/BaseSorting.java" line="71" />
+    <bookmark url="file://$PROJECT_DIR$/src/BaseSorting.java" line="76" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d6d19fe-638c-42e1-ab80-3ceafb4d198d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaseSorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BaseSortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BaseSortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BaseSortingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +17,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SER222_8$BaseSortingTest_quickSort.ic" NAME="BaseSortingTest.quickSort Coverage Results" MODIFIED="1533008575044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SER222_8$BaseSortingTest_getMiddleTest.ic" NAME="BaseSortingTest.getMiddleTest Coverage Results" MODIFIED="1533004328428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.37062937">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="BaseSorting.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/BaseSorting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="335">
-                  <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+                <state relative-caret-position="-34">
+                  <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
                   <folding>
-                    <element signature="e#3159#3160#0" expanded="true" />
-                    <element signature="e#3200#3201#0" expanded="true" />
+                    <element signature="e#4209#4210#0" expanded="true" />
+                    <element signature="e#4250#4251#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -45,8 +44,12 @@
           <file leaf-file-name="Sorting.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Sorting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="236" column="33" lean-forward="true" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
+                <state relative-caret-position="554">
+                  <caret line="234" selection-start-line="234" selection-end-line="234" />
+                  <folding>
+                    <element signature="e#5262#5263#0" expanded="true" />
+                    <element signature="e#5313#5314#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -54,8 +57,11 @@
           <file leaf-file-name="BaseSortingTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/BaseSortingTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-8">
-                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -91,8 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Sorting.java" />
-        <option value="$PROJECT_DIR$/tests/BaseSortingTest.java" />
         <option value="$PROJECT_DIR$/src/BaseSorting.java" />
+        <option value="$PROJECT_DIR$/tests/BaseSortingTest.java" />
       </list>
     </option>
   </component>
@@ -164,7 +170,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BaseSortingTest.getMiddleTest">
+  <component name="RunManager" selected="JUnit.BaseSortingTest.quickSort">
+    <configuration name="BaseSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaseSorting" />
+      <module name="SER222-8" />
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SER222-8" />
@@ -189,13 +199,34 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="BaseSortingTest.quickSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SER222-8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BaseSortingTest" />
+      <option name="METHOD_NAME" value="quickSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.BaseSortingTest.getMiddleTest" />
+      <item itemvalue="Application.BaseSorting" />
+      <item itemvalue="JUnit.BaseSortingTest.quickSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BaseSortingTest.quickSort" />
         <item itemvalue="JUnit.BaseSortingTest.getMiddleTest" />
+        <item itemvalue="Application.BaseSorting" />
       </list>
     </recent_temporary>
   </component>
@@ -213,35 +244,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 26m 28s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 28m 34s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 29m 01s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 29m 17s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 29m 30s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 30m 26s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 32m 01s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 32m 09s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 49m 02s.xml">
-      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 19h 51m 30s.xml">
       <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 09m 42s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 10m 06s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 11m 40s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 25m 24s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 26m 18s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_getMiddleTest - 2018.07.30 at 20h 26m 41s.xml">
+      <configuration name="BaseSortingTest.getMiddleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_quickSort - 2018.07.30 at 20h 36m 45s.xml">
+      <configuration name="BaseSortingTest.quickSort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_quickSort - 2018.07.30 at 20h 36m 56s.xml">
+      <configuration name="BaseSortingTest.quickSort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseSortingTest_quickSort - 2018.07.30 at 20h 37m 41s.xml">
+      <configuration name="BaseSortingTest.quickSort" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -257,8 +288,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.32947367" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Run" visible="true" weight="0.32947367" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.19791667" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -268,11 +299,30 @@
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Debug" weight="0.48421052" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Sorting.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Sorting.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -291,25 +341,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="236" column="33" lean-forward="true" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/BaseSortingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="554">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+          <folding>
+            <element signature="e#5262#5263#0" expanded="true" />
+            <element signature="e#5313#5314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseSorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+        <state relative-caret-position="-34">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
           <folding>
-            <element signature="e#3159#3160#0" expanded="true" />
-            <element signature="e#3200#3201#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4250#4251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/BaseSortingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
