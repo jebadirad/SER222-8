@@ -24,6 +24,15 @@ public class BaseSortingTest {
 
     @Test
     public void mergesort() {
+        for(int iterator = 0; iterator < 30; iterator ++){
+            int maxLength = ThreadLocalRandom.current().nextInt(0, 101);
+            b = new Integer[maxLength];
+            for(int i = 0; i < maxLength; i ++){
+                b[i] = ThreadLocalRandom.current().nextInt(-50, 51);
+            }
+            BaseSorting.mergesort(b);
+            assertTrue(BaseSorting.isSorted(b));
+        }
     }
     @Test
     public void getMiddleTest(){

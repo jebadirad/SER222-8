@@ -14,20 +14,19 @@ public class BaseSorting {
      */
     public static void main(String[] args) {
         //Q1
-        String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+       /* String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         quicksortmid(a);
         assert isSorted(a); //requires assertions enabled.
-        show(a);
+        show(a);*/
 
         //Q2
-        /*String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         mergesort(b);
         assert isSorted(b);
-        show(b);*/
+        show(b);
     }
 
     public static void quicksortmid(Comparable[] a) {
-        //TODO: implement this.
         quickSort(a, 0, a.length -1);
         
     }
@@ -106,7 +105,71 @@ public class BaseSorting {
 
     public static void mergesort(Comparable[] a) {
         //TODO: implement this.
+        Comparable[] temp = mergesortRec(a);
+        for(int i = 0; i < temp.length; i ++){
+            a[i] = temp[i];
+        }
     }
+
+    public static Comparable[] mergesortRec(Comparable[] a){
+        Comparable[] sorted;
+        int mid = a.length / 2;
+        if(mid > 0 ){
+            Comparable[] left = arrayPart(a, 0, mid);
+            Comparable[] right = arrayPart(a, mid, a.length );
+            left = mergesortRec(left);
+            right = mergesortRec(right);
+            sorted = merge(left, right);
+        }else{
+            sorted = a ;
+        }
+
+
+        return sorted;
+    }
+    public static Comparable[] arrayPart(Comparable[] data, int start, int end){
+
+        Comparable[] leftOver = new Comparable[end - start];
+        for(int i = 0; start < end; i++){
+               leftOver[i] = data[start];
+               start ++;
+        }
+
+        return leftOver;
+    }
+
+    public static Comparable[] merge(Comparable[] a, Comparable[] b){
+        Comparable[] temp = new Comparable[a.length + b.length];
+        int first1 = 0;
+        int first2 = 0;
+        int index = 0;
+        while(first1 < a.length && first2 < b.length){
+            if(a[first1].compareTo(b[first2]) < 0){
+                temp[index] = a[first1];
+                first1++;
+            }
+            else{
+                temp[index] = b[first2];
+                first2++;
+            }
+            index++;
+        }
+
+        while(first1 < a.length){
+            temp[index] = a[first1];
+            first1++;
+            index++;
+        }
+
+        while(first2 < b.length){
+            temp[index] = b[first2];
+            first2++;
+            index++;
+        }
+
+        return temp;
+    }
+
 
     /**
      * Displays contents of array, space separated.
