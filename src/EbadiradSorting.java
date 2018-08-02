@@ -1,11 +1,11 @@
 /**
  * Implements various sorting algorithms.
  *
- * @author (your name), Acuna, Sedgewick
- * @verison (version)
+ * @author JonDavid Ebadirad, Acuna, Sedgewick
+ * @verison 1.0
  */
 
-public class BaseSorting {
+public class EbadiradSorting {
 
     /**
      * Entry point for sample output.
@@ -14,10 +14,10 @@ public class BaseSorting {
      */
     public static void main(String[] args) {
         //Q1
-       /* String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         quicksortmid(a);
         assert isSorted(a); //requires assertions enabled.
-        show(a);*/
+        show(a);
 
         //Q2
         String[] b = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
@@ -26,11 +26,22 @@ public class BaseSorting {
         show(b);
     }
 
+    /**
+     * method used to quicksort an array based on a middle value
+     * @param a an array to be sorted. 
+     */
     public static void quicksortmid(Comparable[] a) {
         quickSort(a, 0, a.length -1);
         
     }
 
+    /**
+     * method used to quick sort an array recursivly
+     * @param data the array to sort
+     * @param min the left most index
+     * @param max the right most index
+     * @param <T> the array must be Comparable.
+     */
     public static <T extends Comparable<T>>
     void quickSort(T[] data, int min, int max){
         if(min < max){
@@ -41,6 +52,16 @@ public class BaseSorting {
             quickSort(data, middleIndex + 1, max);
         }
     }
+
+    /**
+     * method used to get the middle value's index out of three elements from an array
+     * @param data the array we are sorting
+     * @param first the index of the first value in question
+     * @param second the index of the second value in question
+     * @param third the index of the third value in question
+     * @param <T> the array must be Comparable
+     * @return the index of the middle value, will always be first, second or third.
+     */
     public static<T extends Comparable<T>>
     int getMiddleIndex(T[]data, int first, int second, int third){
         int middleValue = second;
@@ -73,7 +94,17 @@ public class BaseSorting {
             }
            return middleValue;
     }
-    public static <T extends Comparable<T>>
+
+    /**
+     * used in quick sort to partition and sort the array
+     * @param data the array to be sorted
+     * @param min the index of the left most element
+     * @param max the index of the right most element
+     * @param middleIndex the index of the value that is the middle value
+     * @param <T> the data must be comparable.
+     * @return the index of the value that is greater than the middle value.
+     */
+    private static <T extends Comparable<T>>
     int partition(T[] data, int min, int max, int middleIndex){
         int left, right;
         T partitionElement = data[middleIndex];
@@ -96,6 +127,13 @@ public class BaseSorting {
         return right;
     }
 
+    /**
+     * swaps the values in an array based on the index
+     * @param data the array that we are looking at to swap elements in
+     * @param index1 the index of the first value to swap
+     * @param index2 the index of the second value to swap
+     * @param <T> The array type must be Comparable
+     */
     public static <T extends Comparable<T>>
     void swap(T[] data, int index1, int index2){
         T temp = data[index1];
@@ -103,14 +141,24 @@ public class BaseSorting {
         data[index2] = temp;
     }
 
+    /**
+     * Sorts an array and updates the array from the parameter
+     * with the sorted array
+     * @param a the array to be sorted, this method modifies the original array
+     */
     public static void mergesort(Comparable[] a) {
-        //TODO: implement this.
         Comparable[] temp = mergesortRec(a);
         for(int i = 0; i < temp.length; i ++){
             a[i] = temp[i];
         }
     }
 
+    /**
+     *
+     * recursive method used in merge sort
+     * @param a an array to be sorted
+     * @return a sorted array
+     */
     public static Comparable[] mergesortRec(Comparable[] a){
         Comparable[] sorted;
         int mid = a.length / 2;
@@ -127,6 +175,15 @@ public class BaseSorting {
 
         return sorted;
     }
+
+    /**
+     *
+     * partitions an array from start index up to end index
+     * @param data the array we are copying out
+     * @param start the index that we are starting
+     * @param end the index we are ending, exclusive
+     * @return a subsection of the array
+     */
     public static Comparable[] arrayPart(Comparable[] data, int start, int end){
 
         Comparable[] leftOver = new Comparable[end - start];
@@ -138,6 +195,12 @@ public class BaseSorting {
         return leftOver;
     }
 
+    /**
+     * Merges two unsorted arrays into a sorted array
+     * @param a an array
+     * @param b another array
+     * @return a sorted array
+     */
     public static Comparable[] merge(Comparable[] a, Comparable[] b){
         Comparable[] temp = new Comparable[a.length + b.length];
         int first1 = 0;
